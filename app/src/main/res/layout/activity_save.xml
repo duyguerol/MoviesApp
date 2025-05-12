@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.duyer.SaveActivity">
+
+    <Button
+        android:id="@+id/buttonsave"
+        android:layout_width="255dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="save"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="271dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="image"
+        app:layout_constraintBottom_toTopOf="@+id/editTextad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sec" />
+
+    <EditText
+        android:id="@+id/editTextad"
+        android:layout_width="262dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="NAME"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextyonetmen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextyil"
+        android:layout_width="131dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="YEAR"
+        android:inputType="datetime|date"
+        app:layout_constraintBottom_toTopOf="@+id/editTextimdb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextimdb"
+        android:layout_width="135dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="İMDB"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextyonetmen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="DİRECTOR"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextyil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
